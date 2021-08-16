@@ -1,0 +1,31 @@
+<odoo>
+  <data>
+
+    <!-- project.task inherit form view -->
+    <record id="identifiantdemavueformajoutee" model="ir.ui.view">
+      <field name="name">project.task.inherit.view.form</field>
+      <field name="model">project.task</field>
+      <field name="inherit_id" ref="project.view_task_form2"/>
+      <field name="arch" type="xml">
+        <field name="user_id" position="after">
+          <field name="nom"/>
+          <field name="buy"/>
+        </field>
+      </field>
+    </record>
+
+    <!-- project.task inherit tree view -->
+    <record id="identifiantdemavuelisteajoutee" model="ir.ui.view">
+      <field name="name">project.task.inherit.view.tree</field>
+      <field name="model">project.task</field>
+      <field name="inherit_id" ref="project.view_task_tree2"/>
+      <field name="arch" type="xml">
+        <field name="user_id" position="after">
+          <field name="nom"/>
+        </field>
+
+      </field>
+    </record>
+
+  </data>
+</odoo>
