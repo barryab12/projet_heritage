@@ -20,9 +20,6 @@
     'depends': ['base', 'project'],
 
     # always loaded
-    'data': [
-        # 'security/ir.model.access.csv',
-        'views/task.xml'
-    ],
+    'data': ['views/task.xml'],
     "application": True,
 }
